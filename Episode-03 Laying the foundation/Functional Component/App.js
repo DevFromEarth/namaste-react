@@ -5,21 +5,21 @@ const jsxHeading = <h1 className="xyz">Hello from JSX</h1>;
 console.log("jsxHeading =>", jsxHeading);
 
 //Functional Component
-//HeadingComponent1 and HeadingComponent2 are same
+//Title and HeadingComponent are same
 const Title = () => {
   return <h1>This is Title</h1>;
 };
 
 //component composition
-const HeadingComponent2 = () => (
+const HeadingComponent = () => (
   <div className="container">
     {jsxHeading}
     <Title />
     <Title></Title>
-    <h1 className="testing">This is HeadingComponent2</h1>
+    <h1 className="testing">This is HeadingComponent</h1>
   </div>
 );
-console.log("HeadingComponent2 =>", HeadingComponent2());
+console.log("HeadingComponent =>", HeadingComponent());
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -27,4 +27,4 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 //the last one will display because root.render will update the content of the root element
 root.render(jsxHeading);
 root.render(<Title />);
-root.render(HeadingComponent2());
+root.render(HeadingComponent());
