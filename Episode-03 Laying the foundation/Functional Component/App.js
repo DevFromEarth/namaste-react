@@ -24,7 +24,7 @@ console.log("HeadingComponent2 =>", HeadingComponent2());
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 //all the below synatx are correct
-//the last one will display as root.render will update the content of the root element
+//the last one will display because root.render will update the content of the root element
 root.render(jsxHeading);
 root.render(<Title />);
 root.render(HeadingComponent2());
