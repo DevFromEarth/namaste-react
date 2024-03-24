@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// React.createE1ement => ReactE1ement/JS Object => HTMLE1ement(render)
+// React.createElement => ReactE1ement/JS Object => HTMLE1ement(render)
 const heading = React.createElement(
   "h1",
   { id: "heading", xyz: "abc" },
