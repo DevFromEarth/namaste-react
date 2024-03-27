@@ -6,7 +6,7 @@ console.log("jsxHeading =>", jsxHeading);
 
 //Functional Component
 //Title and HeadingComponent are diffrent ways of returning JSX.
-// Functional Component return JSX => Babel Transpiles it to React.createEtement => ReactE1ementl/JS Object => HTMLEtement(render)
+// Functional Component return JSX => Babel Transpiles it to React.createElement => ReactElement/JS Object => HTMLEtement(render)
 const Title = () => {
   return <h1>This is Title</h1>;
 };

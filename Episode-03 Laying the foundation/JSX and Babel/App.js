@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// React.createElement => ReactE1ement/JS Object => HTMLE1ement(render)
+// React.createElement => ReactElement/JS Object => HTMLElement(render)
 const heading = React.createElement(
   "h1",
   { id: "heading", xyz: "abc" },
@@ -9,7 +9,7 @@ const heading = React.createElement(
 );
 console.log("heading => ", heading);
 
-// JSX => Babel Transpiles it to React.createEtement => ReactE1ementl/JS Object => HTMLEtement(render)
+// JSX => Babel Transpiles it to React.createElement => ReactElement/JS Object => HTMLElement(render)
 const jsxHeading = <h1 className="xyz">Hello from JSX</h1>;
 console.log("jsxHeading =>", jsxHeading);
 
