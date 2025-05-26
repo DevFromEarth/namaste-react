@@ -26,11 +26,10 @@ const AppBody = () => {
     setBest(filterData);
   };
 
-  if (best.length === 0) {
-    return <Shimmer />;
-  }
-
-  return (
+  //Conditional rendering
+  return best.length === 0 ? (
+    <Shimmer />
+  ) : (
     <div className="appBody">
       <div className="search">
         <button onClick={filterClicked}>Best Restaurants</button>
