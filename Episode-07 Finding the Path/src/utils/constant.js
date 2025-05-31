@@ -1,0 +1,1 @@
+export const LOGO_URL = "https://www.creativefabrica.com/wp-content/uploads/2020/02/12/Food-Logo-Graphics-1-99-580x386.jpg";
