@@ -1,4 +1,5 @@
 const Card = ({ data }) => {
+  console.log("Card Rendered");
   return (
     <div className="card">
       <img
