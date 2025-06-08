@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+//Example of useEffect Variations
 const Demo = () => {
   const [count, setCount] = useState(0);
 
