@@ -1,0 +1,168 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12);
+}
+
+.header .logo img {
+  width: 122px;
+  height: 71px;
+}
+
+.header .navbar ul {
+  display: flex;
+}
+
+.header .navbar ul li {
+  padding: 0 5px;
+  list-style-type: none;
+}
+
+.appBody .search {
+  padding: 10px;
+  border: 1px solid rgb(240, 240, 245);
+  display: flex;
+  gap: 8px;
+  justify-content: end;
+}
+
+.appBody .cards {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.appBody .card {
+  width: 234px;
+  box-sizing: border-box;
+}
+
+.appBody .card:hover {
+  transform: scale(0.95, 0.95);
+  transform-origin: center center;
+  transition: all 0.1s ease-in 0s;
+}
+
+.appBody .card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 25px;
+}
+.appBody .card .cardDetails {
+  padding: 5px;
+}
+
+.appBody .card .otherDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cardName {
+  font-weight: bold;
+}
+
+.rating {
+  color: green;
+}
+
+.shimmer-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.shimmer-card {
+  width: 234px;
+  height: 268px;
+  background-color: #f0f0f0;
+  border-radius: 25px;
+}
+
+.user-card {
+  margin: 16px;
+  padding: 8px;
+  border: 1px solid black;
+}
+
+.MenuName {
+  text-align: center;
+}
+
+.CategoryHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid rgba(2, 6, 12, 0.15);
+  background-color: #f0f0f0;
+}
+
+.RestaurantCategory {
+  margin: 0 auto;
+  margin-bottom: 16px;
+  width: 50%;
+
+  .CategoryList {
+    border: 1px solid rgba(2, 6, 12, 0.15);
+    padding: 8px;
+
+    &:empty {
+      display: none;
+    }
+  }
+}
+
+.ItemList {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(2, 6, 12, 0.15);
+  padding: 10px 0;
+
+  .ItemListLeft {
+    span {
+      font-size: medium;
+    }
+    p {
+      font-size: small;
+    }
+  }
+
+  .ItemListRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    button {
+      width: 52px;
+    }
+
+    img {
+      width: 150px;
+    }
+  }
+}
+
+.Cart {
+  width: 50%;
+  margin: 0 auto 16px;
+
+  h1 {
+    text-align: center;
+  }
+  .ClearCart {
+    text-align: center;
+
+    button {
+      background-color: black;
+      color: white;
+      padding: 6px;
+      border-radius: 6px;
+    }
+  }
+}
