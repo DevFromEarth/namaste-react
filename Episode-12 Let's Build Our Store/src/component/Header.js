@@ -10,8 +10,9 @@ export const Header = () => {
   const { loggedInUser } = useContext(UserContext);
 
   // Subscribing to the store using a Selector
-  //should avoid it. Not optimised
+  // Below code should avoid it. Not optimised
   // const temp = useSelector((store) => store);
+  // Below code is currect use of store
   // const cartItems1 = temp.cart.items;
   const cartItems = useSelector((store) => store.cart.items);
   console.log("In Header : ", cartItems);
