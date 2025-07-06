@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import ItemList from "./ItemList";
 import { clearCart } from "../utils/cartSlice";
 
-const Card = () => {
+const Cart = () => {
   const cartItems = useSelector((store) => store.cart.items);
   const dispatch = useDispatch();
 
@@ -24,4 +24,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default Cart;
